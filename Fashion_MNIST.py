@@ -1,7 +1,7 @@
 from tensorflow.keras.datasets import fashion_mnist
 (X_train,y_train),(X_test,y_test)=fashion_mnist.load_data()
-# print(X_train.shape)
-# print(y_train.shape)
+print(X_train.shape)
+print(y_train.shape)
 X_train=X_train.reshape(-1,28,28,1)
 X_test=X_test.reshape(-1,28,28,1)
 X_train=X_train/255.0
