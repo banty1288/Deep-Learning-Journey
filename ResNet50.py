@@ -4,9 +4,9 @@ base_model=ResNet50(
     include_top=False,
     input_shape=(224,224,3)
 )
-# base_model.trainable=False
-# print(base_model.output_shape)
-# base_model.summary()
+base_model.trainable=False
+print(base_model.output_shape)
+base_model.summary()
 from tensorflow.keras.layers import GlobalAveragePooling2D
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.models import Sequential
@@ -16,7 +16,7 @@ model=Sequential([
     Dense(128,activation="relu"),
     Dense(6,activation="softmax")
 ])
-# model.summary()
+model.summary()
 from tensorflow.keras.optimizers import Adam
 
 model.compile(
