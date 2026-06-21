@@ -12,10 +12,10 @@ X_train=X[:split]
 X_test=X[split:]
 Y_train=Y[:split]
 Y_test=Y[split:]
-# print(X_train)
-# print(X_test)
-# print(Y_train)
-# print(Y_test)
+print(X_train)
+print(X_test)
+print(Y_train)
+print(Y_test)
 from xgboost import XGBRegressor
 model=XGBRegressor(
     n_estimators=100,
