@@ -1,0 +1,20 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 6
+
+names:
+  0: Fist
+  1: One
+  2: Victory
+  3: Three
+  4: Four
+  5: Open_Palm
+
+roboflow:
+  workspace: banty-6gaj6
+  project: hand-gesture-2-rgidk
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/banty-6gaj6/hand-gesture-2-rgidk/dataset/1
